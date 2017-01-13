@@ -8,9 +8,11 @@
 <style type="text/css">
 	
 body{
-    background: url({% static "pickles.jpg" %});
-	background-color: #444;
-    background: url({% static "pickles.jpg" %}),url({% static "pickles.jpg" %});    
+    background: url({% static "pickles.jpg" %}) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .vertical-offset-100{

@@ -16,7 +16,6 @@ def index(request):
 	
 		try:
 			session = request.COOKIES['session']
-			print request.COOKIES
 			unserSession = cPickle.loads(base64.b64decode(session))
 		except Exception:
 			pass

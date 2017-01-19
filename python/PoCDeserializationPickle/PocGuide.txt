@@ -26,10 +26,10 @@
 
 Installation:
 
-OS requirements: Linux based OS ==> Future implementation in windows too
+OS requirements: Linux/Windows
 
 
-1. Install python, pip and django v1.10
+1. Install python, pip and django v1.10 (pip install django==1.10)
 2. python manage.py <IP>:<Port> from PoC folder
 
 Objetive of this PoC:

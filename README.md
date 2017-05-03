@@ -1,5 +1,5 @@
 # Web-RCE-PoC-s
-Most common theotical Web RCE's with some exploits and PoC's to practise with (not real CVE's)
+Most common theorical Web RCE's with some exploits and PoC's to practise with (not real CVE's)
 
 Python:
 

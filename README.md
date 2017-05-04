@@ -13,4 +13,4 @@ Java:
 
 	1.Unsafe Deserialization of untrusted input data:
 
-		a. .readObject(): RCE through Deserialization Using uncontrolled input in .readObject() method of a serializable class. Control over this object atributes with combintion of the existence of Dangerous Invocation Handlers make possible the reproduction of this vulnerability. Beanshell is included in this PoC (CVE-2016-2510)
+		a. readObject(): RCE through Deserialization Using uncontrolled input in .readObject() method of a serializable class. Control over this object atributes with combination of the existence of Dangerous Invocation Handlers make possible the reproduction of this vulnerability. Beanshell is included in this PoC (CVE-2016-2510)

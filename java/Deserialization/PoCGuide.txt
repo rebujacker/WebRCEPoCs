@@ -1,0 +1,28 @@
+##############################################################################
+#                             PoC Install Guide                              #
+##############################################################################
+
+Installation:
+
+OS requirements: Linux/Windows
+
+
+1. Install jdk-1.8, netbeans with spring v4
+2. Open Netbeans and load the projects
+3. Server is testd using glassfish
+
+
+Objetive of this PoC:
+
+1. Understand how dangerous deserialization functions with untrusted inputs are
+2. The user input is passed through the cookie but also using the function /DeserializationPoC/dangerousfunction
+3. PayloadGenerator once executed give to us 3 different payloads examples:
+
+a.Payload1: very simply gadget that trigger a dangerous handler in the web page, simply paste in the cookie using a burp tool as burp.
+b.Payload2: simple gadget that uses a vulnerable invocation handler. Same as payload1 for the cookie.
+c. BeanShell (CVE-2016-2510). This one need to be provided as a POST atribute "session=" with target URI /DeserializationPoC/dangerousfunction. We need change symbol '+' for his URL encoded version '%2b' since it will be escaped before arriving to the backend java code.
+
+
+Remember:
+
+This is PoC, it holds vulnerable code. Use it in a controlled environment and don't follow any codings here!

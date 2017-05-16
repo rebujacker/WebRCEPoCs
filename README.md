@@ -19,7 +19,7 @@ PHP:
 
 1. Command Injection and Argument Injection:
 
-		a.
+		Dangerous Functions:
 		popen(
 		shell_exec(
 		exec(
@@ -27,8 +27,10 @@ PHP:
 		system(
 		proc_open(
 		`command`
-					==> Passing a String from userInputs to these functions without escaping could be lethal.In the PoC I try to create a real use case where we can play with this functions and realise the problems involved.
+					
 		Defense:
 		escapeshellcmd()
 		escapeshellarg()
+
+		==> Passing a String from userInputs to these functions without escaping could be lethal.In this PoC I will try to create a real use case where we can play with these functions and realise the problems involved.
 	

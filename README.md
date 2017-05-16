@@ -17,7 +17,7 @@ Java:
 
 PHP:
 
-1. Command Injection and Argument Injection:
+	1.Command Injection and Argument Injection:
 
 		Dangerous Functions:
 		popen(

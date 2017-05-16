@@ -1,0 +1,15 @@
+#!/bin/bash
+cat > /tmp/outgoing-command
+
+echo Received: $0 >> /tmp/outgoing-command
+echo Received: $1 >> /tmp/outgoing-command
+echo Received: $2 >> /tmp/outgoing-command
+echo Received: $3 >> /tmp/outgoing-command
+echo Received: $4 >> /tmp/outgoing-command
+echo Received: $5 >> /tmp/outgoing-command
+echo Received: $6 >> /tmp/outgoing-command
+echo Received: $7 >> /tmp/outgoing-command
+echo Received: $8 >> /tmp/outgoing-command
+echo Received: $9 >> /tmp/outgoing-command
+
+#... whatever more args we should like to capture

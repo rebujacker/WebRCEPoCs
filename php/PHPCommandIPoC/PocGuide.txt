@@ -1,0 +1,32 @@
+
+##############################################################################
+#                             PoC Install Guide                              #
+##############################################################################
+
+Installation:
+
+OS requirements: Linux/Windows
+
+
+1. Install php and libapache-php mod
+2. service apache2 start
+
+Objetive of this PoC:
+
+1. Discover some of the dangerous injectable functions in PHP
+2. Understand the differences between CommandI and ArgumentI
+3. Learn useful techniques to depurate these vulnerabilities
+3. Learn possible deffenses against the attack
+4. Giving working code/payloads to help pentesters to exploit it
+
+Tips:
+
+1.commanddebugger is a bash script that in replacement with the binary that is being called will give to us the data that the webapp is passing to it. This can be useful for future researchs.
+
+Remember:
+
+This is PoC, it holds vulnerable code. Use it in a controlled environment and don't follow any codings here!
+
+Sources:
+
+https://exploitbox.io/vuln/WordPress-Exploit-4-6-RCE-CODE-EXEC-CVE-2016-10033.html

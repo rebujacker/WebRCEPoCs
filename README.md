@@ -14,3 +14,21 @@ Java:
 	1.Unsafe Deserialization of untrusted input data:
 
 		a. readObject(): RCE through Deserialization Using uncontrolled input in .readObject() method of a serializable class. Control over this object atributes with combination of the existence of Dangerous Invocation Handlers make possible the reproduction of this vulnerability. Beanshell is included in this PoC (CVE-2016-2510)
+
+PHP:
+
+1. Command Injection and Argument Injection:
+
+		a.
+		popen(
+		shell_exec(
+		exec(
+		passthru(
+		system(
+		proc_open(
+		`command`
+					==> Passing a String from userInputs to these functions without escaping could be lethal.In the PoC I try to create a real use case where we can play with this functions and realise the problems involved.
+		Defense:
+		escapeshellcmd()
+		escapeshellarg()
+	

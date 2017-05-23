@@ -1,0 +1,3 @@
+pickleGenerator.py ==> Generates a file with serialized revshell for linux using pentestmonkey bash revshell
+loadPickle.py ==> Test the payload file by loading the objects
+

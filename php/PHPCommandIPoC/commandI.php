@@ -7,18 +7,17 @@
 <style type="text/css">
 	
 body{
-    background: url("/PHPCommandIPoC/static/string.jpg");
-	background-color: #444;
-    background: url("/PHPCommandIPoC/static/string.jpg"),url("/PHPCommandIPoC/static/string.jpg");    
+    background: url("/PHPCommandIPoC/static/string.jpg")no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover
+    
 }
-
 .vertical-offset-100{
     padding-top:100px;
 }
-
-
 </style>
-
 
 <title>PHPCommandI</title>
 

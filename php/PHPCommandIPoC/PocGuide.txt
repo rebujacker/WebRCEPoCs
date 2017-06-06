@@ -5,10 +5,10 @@
 
 Installation:
 
-OS requirements: Linux/Windows
+OS requirements: Generally working in a Linux Based OS with exim4 installed
 
 
-1. Install php and libapache-php mod
+1. Install php and libapache2-mod-php
 2. service apache2 start
 
 Objetive of this PoC:

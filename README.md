@@ -15,6 +15,16 @@ Java:
 
 		a. readObject(): RCE through Deserialization Using uncontrolled input in .readObject() method of a serializable class. Control over this object atributes with combination of the existence of Dangerous Invocation Handlers make possible the reproduction of this vulnerability. Beanshell is included in this PoC (CVE-2016-2510)
 
+	2. Command Injection and Argument Injection:
+
+		Dangerous Functions:
+		Runtime.getRuntime().exec(
+		new ProcessBuilder(cmd).start();
+
+		Defense:
+		Not calling directly bash/sh/cmd as process
+		Using String[] instead of normal String craft for Runtime or using ProcessBuilder
+
 PHP:
 
 	1.Command Injection and Argument Injection:

@@ -1,0 +1,26 @@
+##############################################################################
+#                             PoC Install Guide                              #
+##############################################################################
+
+Installation:
+
+OS requirements: Linux/Windows
+
+
+1. Install jdk-1.8, netbeans with spring v4
+2. Open Netbeans and load the projects (you don't need to use an IDE)
+3. Server is tested using glassfish
+
+
+Objetive of this PoC:
+
+1. Discover some of the dangerous injectable functions in JAVA
+2. Understand the differences between CommandI and ArgumentI
+3. Learn useful techniques to depurate these vulnerabilities
+3. Learn possible deffenses against the attack
+4. Giving working code/payloads to help pentesters to exploit it
+
+
+Remember:
+
+This is PoC, it holds vulnerable code. Use it in a controlled environment and don't follow any codings here!

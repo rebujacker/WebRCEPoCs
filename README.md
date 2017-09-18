@@ -43,4 +43,34 @@ PHP:
 		escapeshellarg()
 
 		==> Passing a String from userInputs to these functions without escaping could be lethal.In this PoC I will try to create a real use case where we can play with these functions and realise the problems involved.
+
+
+RUBY:
+
+	1.Command Injection and Argument Injection:
+
+		Dangerous Functions:
+		#Kernel Module
+		system("#{payload}")
+		#Finish the server
+		exec("#{payload}")
+
+		#Doesn't leave trace in server log?
+		`#{payload}`
+		%x( #{payload} )
+		%x{ #{payload} }
+		%x[ #{payload} ]
+		%x< #{payload} >
+			
+		#This one is special, we should have control over the entire string, and start with "|" plus commands
+		open("#{payload}")
+		Process Module
+		spawn("#{payload}")
+		IO Module
+		IO.popen("#{payload}")
+					
+		Defense:
+		Escape bash special chars and spaces
+
+		==> Passing a String from userInputs to these functions without escaping could be lethal.In this PoC I will try to create a real use case where we can play with these functions and realise the problems involved.
 	

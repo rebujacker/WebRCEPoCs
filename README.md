@@ -2,14 +2,27 @@
 Most common theorical Web RCE's with some exploits and PoC's to practise with (not real CVE's)
 
 
-Python:
+PYTHON:
 
 
 	1.Unsafe Deserialization of untrusted input data:
 
 		a. Pickle.load(): RCE through Deserialization Using uncontrolled Pickle.load Funtion
 
-Java:
+	2.Command Injection and Argument Injection:
+
+		Dangerous Functions:
+		#Three ways to invoke commands in Python
+		os.system(payload)
+		os.popen(payload)
+		subprocess.call(payload,shell=True)
+		subprocess.call(payload,shell=False) --> Careful with tokenize strings with userInput Data
+
+		Defense:
+		Escape bash special chars and spaces,using pipes.quote()/shlex.quote(). Take care of tokenization.
+
+		==> Passing a String from userInputs to these functions without escaping could be lethal.In this PoC I will try to create a real use case where we can play with these functions and realise the problems involved.
+JAVA:
 
 	1.Unsafe Deserialization of untrusted input data:
 
@@ -72,22 +85,4 @@ RUBY:
 		Defense:
 		Escape bash special chars and spaces,using Shellwords.escape(). Take care of tokenization.
 
-		==> Passing a String from userInputs to these functions without escaping could be lethal.In this PoC I will try to create a real use case where we can play with these functions and realise the problems involved.
-
-
-PYTHON:
-
-	1.Command Injection and Argument Injection:
-
-		Dangerous Functions:
-		#Three ways to invoke commands in Python
-		os.system(payload)
-		os.popen(payload)
-		subprocess.call(payload,shell=True)
-		subprocess.call(payload,shell=False) --> Careful with tokenize strings with userInput Data
-
-		Defense:
-		Escape bash special chars and spaces,using pipes.quote()/shlex.quote(). Take care of tokenization.
-
-		==> Passing a String from userInputs to these functions without escaping could be lethal.In this PoC I will try to create a real use case where we can play with these functions and realise the problems involved.
-	
+		==> Passing a String from userInputs to these functions without escaping could be lethal.In this PoC I will try to create a real use case where we can play with these functions and realise the problems involved.	

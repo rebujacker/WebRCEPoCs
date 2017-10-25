@@ -1,0 +1,26 @@
+
+##############################################################################
+#                             PoC Install Guide                              #
+##############################################################################
+
+Installation:
+
+OS requirements: Generally working in a Linux Based OS with exim4 installed
+
+
+1. Install nodejs,npm
+2. node app.js
+
+Objetive of this PoC:
+
+1. Discover some of the dangerous injectable functions in Javascript/NodeJS
+2. Understand the differences between CommandI and ArgumentI
+3. Learn useful techniques to depurate these vulnerabilities
+3. Learn possible deffenses against the attack
+4. Giving working code/payloads to help pentesters to exploit it
+
+
+Remember:
+
+This is PoC, it holds vulnerable code. Use it in a controlled environment and don't follow any codings here!
+
